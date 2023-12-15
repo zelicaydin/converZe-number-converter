@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="functions.js"></script>
+
+    <title>converZe converter</title>
+    <body>
+
+      <div class="background">
+      <div class="logo-wrapper">
+      <div class="logo-container">
+        <img src="converze_logo.png" alt="converze logo">
+      </div>
+    </div>
+        
+
+      <div class="textbox-container">
+        <div class="textbox">
+          <input type="text" id="input-field">
+
+          <button class="convert-button" onclick="processInput('copyButtonId')">
+            <h1>
+              <svg width="35px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)matrix(-1, 0, 0, 1, 0, 0)">
+
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <g id="SVGRepo_iconCarrier"> <path d="M8.60112 16.5308C8.89426 16.8234 9.36913 16.823 9.66178 16.5299C9.95442 16.2367 9.95402 15.7619 9.66088 15.4692L8.60112 16.5308ZM5.52988 11.3452C5.23674 11.0526 4.76187 11.053 4.46922 11.3461C4.17658 11.6393 4.17698 12.1141 4.47012 12.4068L5.52988 11.3452ZM4.48682 11.3291C4.18475 11.6125 4.16964 12.0871 4.45306 12.3892C4.73648 12.6912 5.21111 12.7064 5.51318 12.4229L4.48682 11.3291ZM9.64418 8.54694C9.94625 8.26352 9.96136 7.78889 9.67794 7.48682C9.39452 7.18475 8.91989 7.16964 8.61782 7.45306L9.64418 8.54694ZM5 11.126C4.58579 11.126 4.25 11.4618 4.25 11.876C4.25 12.2902 4.58579 12.626 5 12.626V11.126ZM15.37 11.876L15.3723 11.126H15.37V11.876ZM17.9326 10.8234L18.4614 11.3553V11.3553L17.9326 10.8234ZM19.75 8.26907C19.7511 7.85486 19.4163 7.51815 19.0021 7.517C18.5879 7.51586 18.2511 7.85072 18.25 8.26493L19.75 8.26907ZM9.66088 15.4692L5.52988 11.3452L4.47012 12.4068L8.60112 16.5308L9.66088 15.4692ZM5.51318 12.4229L9.64418 8.54694L8.61782 7.45306L4.48682 11.3291L5.51318 12.4229ZM5 12.626H15.37V11.126H5V12.626ZM15.3677 12.626C16.5267 12.6295 17.6395 12.1724 18.4614 11.3553L17.4038 10.2916C16.8641 10.8282 16.1333 11.1283 15.3723 11.126L15.3677 12.626ZM18.4614 11.3553C19.2833 10.5382 19.7468 9.42801 19.75 8.26907L18.25 8.26493C18.2479 9.02598 17.9435 9.755 17.4038 10.2916L18.4614 11.3553Z" fill="#620362"/> </g>
+                
+                </svg>
+            </h1>
+          </button>
+
+          <button class="remove-button" onclick="erase('copyButtonId')">
+            <h1>
+              <svg width="35px" height="50px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#620362" stroke-width="0.00025">
+
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <g id="SVGRepo_iconCarrier"> <path d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z" fill="#620362"/> </g>
+                
+                </svg>
+            </h1>
+          </button>
+        </div>
+          
+        <div class="textbox2">
+          <input type="text" id="output-field" readonly>
+
+          <button id="copyButtonId" class="copy-button" title="Copy to clipboard" style="display: none;" onclick="copyToClipboard()">
+            <h1>
+              <svg fill="#AFAFAF" height="50px" width="35px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" stroke="#620362">
+
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <g id="SVGRepo_iconCarrier"> <g> <g> <path d="M479.168,113.227c-0.537-1.284-1.319-2.451-2.304-3.435L370.197,3.125c-2.002-1.991-4.707-3.114-7.531-3.125h-192 C164.776,0,160,4.776,160,10.667V64H42.667C36.776,64,32,68.776,32,74.667v426.667C32,507.224,36.776,512,42.667,512h298.667 c5.891,0,10.667-4.776,10.667-10.667V448h117.333c5.891,0,10.667-4.776,10.667-10.667v-320 C479.997,115.923,479.714,114.527,479.168,113.227z M373.333,36.416l70.251,70.251h-70.251V36.416z M330.667,490.667H53.333 V85.333H224v96c0,5.891,4.776,10.667,10.667,10.667h96V490.667z M245.333,170.667v-70.251l70.251,70.251H245.333z M458.667,426.667H352V181.333c-0.009-2.827-1.132-5.537-3.125-7.541L242.208,67.125c-2.005-1.994-4.714-3.117-7.541-3.125 h-53.333V21.333H352v96c0,5.891,4.776,10.667,10.667,10.667h96V426.667z"/> </g> </g> </g>
+                
+                </svg>
+            </h1>
+          </button>
+        </div>
+      </div>
+
+      <div class="major-button-container">
+        <div class="button-container-1">
+          <button id="binary1" class="language-button" onclick="toggleButtons('binary1')">Binary</button>
+          <button id="octal1" class="language-button" onclick="toggleButtons('octal1')">Octal</button>
+          <button id="decimal1" class="language-button" onclick="toggleButtons('decimal1')">Decimal</button>
+          <button id="hex1" class="language-button" onclick="toggleButtons('hex1')">Hex</button>
+        </div>
+        <div class="button-container-2">
+          <button id="binary2" class="language-button-2" onclick="toggleButtons2('binary2')">Binary</button>
+          <button id="octal2" class="language-button-2" onclick="toggleButtons2('octal2')">Octal</button>
+          <button id="decimal2" class="language-button-2" onclick="toggleButtons2('decimal2')">Decimal</button>
+          <button id="hex2" class="language-button-2" onclick="toggleButtons2('hex2')">Hex</button>
+        </div>
+      </div>
+
+      <div class="bottomDiv">
+        <p>
+            <a href="https://github.com/zelicaydin" target="_blank">GitHub</a>
+            <a href="https://ba.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="contact-form.html" target="_blank" onclick="toggleContactForm()">Contact Us</a>
+        </p>
+    </div>
+    </div>
+    </body>
+  </head>
+</html>
